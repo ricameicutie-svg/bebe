@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For My Darling 🤍</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Patrichk Hand', cursive;
+      background: linear-gradient(to bottom, #ffd6e0, #fff);
+      color: #333;
+      text-align: center;
+    }
+    .container {
+      padding: 50px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    h1 {
+      font-size: 3em;
+      color: #c9184a;
+    }
+    h2 {
+      font-weight: normal;
+      margin-top: 10px;
+    }
+    .heart {
+      font-size: 50px;
+      animation: beat 1.5s infinite;
+    }
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+    .letter {
+      margin-top: 40px;
+      font-size: 1.2em;
+      line-height: 1.8;
+      background: rgba(255,255,255,0.8);
+      padding: 30px;
+      border-radius: 15px;
+    }
+    footer {
+      margin-top: 50px;
+      font-size: 0.9em;
+      color: #666;
+    }
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  </style>
+</head>
+<body>
+
+<audio id="bgMusic" src="song.mp3.mp3" loop></audio>
+
+<script>
+  let played = false;
+  window.addEventListener('scroll', () => {
+    if (!played) {
+      document.getElementById("bgMusic").play();
+      played = true;
+    }
+  });
+</script>
+
+  <div class="container">
+    <div class="heart">❤️</div>
+    <h1>Hi Ethan Ramirez</h1>
+    <h2>This page is just for you</h2>
+    <img src="us.jpg.jpg" alt="Us" class="photo">
+
+.photo {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 20px;
+  margin: 30px auto;
+  display: block;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+<div class="hearts"></div>
+    <div class="letter">
+.hearts::before,
+.hearts::after {
+  content: "❤️ 💕 💖 💗 💓";
+  position: fixed;
+  top: -10%;
+  left: 0;
+  width: 100%;
+  font-size: 24px;
+  animation: hearts 10s linear infinite;
+  opacity: 0.6;
+}
+
+.hearts::after {
+  animation-delay: 5s;
+}
+
+@keyframes hearts {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(120vh);
+  }
+}
+      <p>
+        I made this little space on the internet just to remind you how much you mean to me.
+        Thank you for staying, for loving me patiently, and for choosing me every single day.
+        I want to spend my life with you, through all the ordinary and extraordinary moments,
+        always choosing us, always choosing you. 
+      <p>
+	 Baby, loving you has been a journey of learning 
+	 and choosing, not the perfect kind but the real kind, the kind that grows through 
+	 misunderstandings, apologies, laughter, and quiet moments where I realize I still want you 
+	 just the same if not more. I have loved you in my healing, in my mistakes, in my becoming, 
+	 and every version of me has found home in you. With you, love is not just a feeling I hold 
+	 but a promise I keep, to listen better, to love deeper, and to stay even when it gets hard, 
+	 because my heart knows that every day with you is a choice I will always make.
+      </p>
+      <p>
+        This is only a page, but my love for you is bigger than anything words or screens can hold.
+      </p>
+      <p>
+        Forever yours,<br>
+        Wifey 🤍
+      </p>
+    </div>
+
+    <footer>
+      Made with love • Always you
+    </footer>
+  </div>
+</body>
+</html>
